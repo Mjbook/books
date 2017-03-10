@@ -1,0 +1,76 @@
+@charset 'utf-8';
+/* Reset */
+
+html,body {}
+body, h1, h2, h3, h4, h5, h6,
+div, p, blockquote, pre, address,
+ul, ol, li, dl, dt, dd,
+table, caption, th, td,
+form, fieldset, legend,
+hr {
+	margin: 0;
+	padding: 0;
+	font-family:ng;
+	font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+ul, ol {list-style:none;}
+
+
+
+
+*+html table {border-collapse:collapse;}
+table {width:100%;margin:0;padding:0;border-spacing:0;border:0;_border-collapse:collapse;}
+img, fieldset, abbr, acronym {border:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal;font-weight:normal;}
+input, select, button, textarea {
+	padding:0;
+	color:#666;
+	font-size:100%;
+}
+#skipnavi {
+	width:0;
+	height:0;
+	visibility:hidden;
+}
+/* Base */
+body {
+	font-size:13px;
+	color:#444444;
+	line-height:22px;
+}
+hr {display:none}
+caption, legend {
+	*position:absolute;
+	top:0;
+	left:0;
+	width:0;
+	height:0;
+	line-height:0;
+	overflow:hidden;
+	visibility:hidden;
+	font-size:0;
+}
+a {color:#767676;text-decoration:none;}
+a:focus, a:hover, a:active {color:#767676;text-decoration:none;}
+input.text,
+input.password {
+	padding:2px 0;
+	border:1px solid #cfcfcf;
+	margin:0;
+}
+input.text {padding-left:5px;}
+textarea {padding:3px;border:1px solid #dddddd;}
+label,
+input.button, input.submit , input.image,
+button {cursor:pointer;}
+textarea, pre {overflow:auto;}
+
+
+/*INPUT*/
+input, select, textarea {vertical-align: middle;font-size: 13px;color: #454545;font-family:NanumBarunGothic;border:1px solid #cccccc}
+input{border:1px solid #bec7d6}
+textarea{padding:3px}
+select{ font-family:NanumBarunGothic}
+hr{display:none;}
+
