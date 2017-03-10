@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>객체스러운 이름</h2>
+<h2>객체스러운 이름  ojb</h2>
 </body>
 </html>
