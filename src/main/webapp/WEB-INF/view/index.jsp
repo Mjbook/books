@@ -64,6 +64,7 @@
                             </c:choose>
                             
                             <li><a href="bbsList.do">게시판</a></li>
+                            <li><a href="bbsList1.do">게시판M</a></li>
                             
                         </ul>
                     </div>
