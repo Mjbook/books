@@ -8,7 +8,22 @@
  <select id="bbsList" resultType="bbs.model.BbsDTO">  
  	select * from notice_board order by idx desc
   </select>
+  
+  <select id="bbsContent" parameterType="int" resultType="bbs.model.BbsDTO">
+  	select * from notice_board where idx=#{idx}
+  	 
+  </select>
+  
+  <update id="bbsReadNum" parameterType="int" >
+  	update notice_board set readnum = readnum+1 where idx=#{idx}
+  </update>
+  
+  <select id="bbsSearch" parameterType="hashMap" resultType="bbs.model.BbsDTO">
+  	select * from notice_board where #{jogun} like '%'||#{search}||'%'
+  </select>
  
  
+ 
+
  </mapper>
  

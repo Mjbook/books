@@ -1,10 +1,13 @@
 package controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import bbs.model.BbsDAO;
@@ -29,7 +32,7 @@ public class boardController {
 		
 		int result = bbsDao.bbsWrite(dto);
 		
-		String msg=result>0?"µÓ∑œº∫∞¯!":"µÓ∑œΩ«∆–!";
+		String msg=result>0?"Îì±Î°ù ÏôÑÎ£å!":"Îì±Î°ù Ïã§Ìå®!";
 		
 		mav.addObject("msg",msg);
 		
@@ -46,6 +49,33 @@ public class boardController {
 		mav.addObject("list",list);
 		mav.setViewName("/notice_board/bbsList");
 		
+		return mav;
+	}
+	
+	@RequestMapping("/bbsContent.do")
+	public ModelAndView bbsContent(@RequestParam("idx") int idx){
+		
+		ModelAndView mav = new ModelAndView();
+		BbsDTO dto = bbsDao.bbsContent(idx);
+		
+		mav.addObject("dto",dto);
+		mav.setViewName("/notice_board/bbsContent");
+		
+		return mav;
+		
+	}
+	
+	@RequestMapping("/bbsSearch.do")
+	public ModelAndView bbsSearch(@RequestParam("search")String search, @RequestParam("jogun")String jogun){
+//		Map<String,String> map = new HashMap<String,String>();
+//		
+//		map.put("search", search);
+//		map.put("jogun", jogun);
+		ModelAndView mav = new ModelAndView();
+		List<BbsDTO> dto = bbsDao.bbsSearch(search, jogun);
+		
+		mav.addObject("search",dto);
+		mav.setViewName("/notice_board/bbsList");
 		return mav;
 	}
 

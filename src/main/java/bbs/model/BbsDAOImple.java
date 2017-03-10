@@ -3,8 +3,9 @@ package bbs.model;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 
@@ -58,5 +59,21 @@ public class BbsDAOImple implements BbsDAO {
 		
 		return list;
 	}
+	
+	public BbsDTO bbsContent(int idx){
+		BbsDTO bto = sqlMap.selectOne("bbsContent",idx);
+		sqlMap.update("bbsReadNum",idx);
+		return bto;
+	}
+	
+	public List<BbsDTO> bbsSearch(String search, String jogun) {
+		HashMap<String, String> map = new HashMap<String, String>();
+		map.put("search", search);
+		map.put("jogun", jogun);
+		List<BbsDTO> list = sqlMap.selectList("bbsSearch",map);
+		return list;
+	}
+
+	
 
 }
