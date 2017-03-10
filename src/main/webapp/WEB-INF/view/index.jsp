@@ -47,7 +47,7 @@
                             <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#info">KH도서관 소개</a></li>
                             <li><a href="#bookinfo">신규 도서 현황</a></li>
-                            <li><a href="#bookborrow">도서 대여시스템</a></li>
+                            <li><a href="#bookborrow">사용자리뷰</a></li>
                            	<c:choose>
                            		<c:when test="${empty sessionScope.login_ok }">
 	                           		<li><a href="#myinfo">마이페이지 </a></li>
