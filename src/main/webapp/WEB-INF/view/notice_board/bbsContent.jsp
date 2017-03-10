@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<table>
+<tr>
+	<td>제목</td>
+	<td colspan="3">제목 들어갈 곳</td>
+	
+</tr>
+</table>
 </body>
 </html>
