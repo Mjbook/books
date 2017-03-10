@@ -29,7 +29,7 @@ public class boardController {
 		
 		int result = bbsDao.bbsWrite(dto);
 		
-		String msg=result>0?"ë“±ë¡ ì„±ê³µ!!":"ë“±ë¡ ì‹¤íŒ¨!!";
+		String msg=result>0?"µî·Ï¼º°ø!":"µî·Ï½ÇÆÐ!";
 		
 		mav.addObject("msg",msg);
 		

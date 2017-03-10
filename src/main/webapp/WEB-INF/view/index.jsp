@@ -64,6 +64,7 @@
                             </c:choose>
                             
                             <li><a href="bbsList.do">게시판</a></li>
+                            <li><a href="bbsList1.do">게시판M</a></li>
                             
                         </ul>
                     </div>
@@ -887,7 +888,7 @@
                                     <div class="control-group">
                                         <div class="controls">
                                             <input class="span12" type="email" name="email" id="email" placeholder="* 이메일 주소입력.." />
-                                            <div class="error left-align" id="err-email">Please enter valid email adress.</div>
+                                            <div class="error left-align" id="err-email">Please enter valid email adress..</div>
                                         </div>
                                     </div>
                                     <div class="control-group">
@@ -955,10 +956,10 @@
         <!-- Contact section edn -->
         <!-- Footer section start -->
         <div class="footer">
-      <p>KH도서관 | TEL : 02)987-6541 | FAX : 02)123-4567 | 대표 : MJ |
-         사업자등록번호 : 789-45-12345 | 서울시 강남구 역상동 123 - 456</p>
-      <p>Copyright &copy; 2016 MINJI ALL RIGHTS RESERVED.</p>
-              </div>
+		<p>KH도서관 | TEL : 02)987-6541 | FAX : 02)123-4567 | 대표 : MJ |
+			사업자등록번호 : 789-45-12345 | 서울시 강남구 역상동 123 - 456</p>
+		<p>Copyright &copy; 2016 MINJI ALL RIGHTS RESERVED.</p>
+	</div>
         <!-- Footer section end -->
         <!-- ScrollUp button start -->
         <div class="scrollup">
